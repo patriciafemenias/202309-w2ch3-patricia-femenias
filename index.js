@@ -66,3 +66,10 @@ const getSongsByGenre = (songsList, songGenre) => {
   const theseGenreSongs = songsList.filter((song) => song.genre === songGenre);
   return theseGenreSongs;
 };
+
+const getHitSongsNumber = (songsList) => {
+  const hitSongs = songsList.filter((song) => song.wasAHit === true);
+  return hitSongs;
+};
+
+console.log(getHitSongsNumber(songs).length);
