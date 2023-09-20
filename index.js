@@ -49,3 +49,10 @@ const songs = [
 const addSongToList = (song) => {
   songs.push(song);
 };
+
+const removeSongFromListByTitle = (titleSong) => {
+  const songTitles = songs.map((song) => song.title);
+  const songsTitlesPosition = songTitles.indexOf(titleSong);
+  songs.splice(songsTitlesPosition, 1);
+  return songs;
+};
