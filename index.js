@@ -61,3 +61,8 @@ const getTheSongByTitle = (titleSong) => {
   const theSong = songs.filter((song) => song.title === titleSong);
   return theSong;
 };
+
+const getSongsByGenre = (songsList, songGenre) => {
+  const theseGenreSongs = songsList.filter((song) => song.genre === songGenre);
+  return theseGenreSongs;
+};
