@@ -56,3 +56,8 @@ const removeSongFromListByTitle = (titleSong) => {
   songs.splice(songsTitlesPosition, 1);
   return songs;
 };
+
+const getTheSongByTitle = (titleSong) => {
+  const theSong = songs.filter((song) => song.title === titleSong);
+  return theSong;
+};
