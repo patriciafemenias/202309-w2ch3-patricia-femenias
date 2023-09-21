@@ -73,3 +73,10 @@ const getHitSongsNumber = (songsList) => {
 };
 
 console.log(getHitSongsNumber(songs).length);
+
+const getAnOrderedSongListByYear = (songList) => {
+  const sortedSongByYear = songList.sort(
+    (songA, songB) => songA.year - songB.year
+  );
+  return sortedSongByYear;
+};
